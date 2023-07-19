@@ -21,6 +21,12 @@ public class User {
     private String password;
     private String nickname;
 
+    private String email;
+
     @Enumerated(EnumType.STRING)
     private UserRole role;
+
+    // OAuth 로그인에 사용
+    private String provider;
+    private String providerId;
 }
